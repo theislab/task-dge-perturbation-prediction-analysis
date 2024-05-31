@@ -6,7 +6,7 @@ STABILITY_RUN=s3://openproblems-data/resources/dge_perturbation_prediction/resul
 # fetch and process results
 NXF_VER=23.10.0 nextflow run \
   openproblems-bio/openproblems-v2 \
-  -r main_build \
+  -r 82f10a11f1e23d62f8a0e64e8cf9560dea69af12 \
   -main-script target/nextflow/common/process_task_results/run/main.nf \
   -profile docker \
   -resume \

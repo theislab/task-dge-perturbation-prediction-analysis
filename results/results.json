@@ -142,7 +142,14 @@
     },
     "mean_score": 0.4636,
     "normalization_id": null,
-    "resources": {},
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7033,
+      "cpu_pct": 6600.4,
+      "peak_memory_mb": 49562,
+      "disk_read_mb": 12417,
+      "disk_write_mb": 3593
+    },
     "task_id": "dge_perturbation_prediction"
   },
   {
@@ -747,7 +754,14 @@
     },
     "mean_score": 0.443,
     "normalization_id": null,
-    "resources": {},
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 21468,
+      "cpu_pct": 6046.6,
+      "peak_memory_mb": 78746,
+      "disk_read_mb": 34417,
+      "disk_write_mb": 7786
+    },
     "task_id": "dge_perturbation_prediction"
   },
   {
