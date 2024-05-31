@@ -1,0 +1,2018 @@
+[
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7,
+      "cpu_pct": 207,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.5,
+      "cpu_pct": 609.3,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 119,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.4,
+      "cpu_pct": 291.7,
+      "peak_memory_mb": 3072,
+      "disk_read_mb": 121,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.4,
+      "cpu_pct": 444,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 117,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.7,
+      "cpu_pct": 518.8,
+      "peak_memory_mb": 5632,
+      "disk_read_mb": 120,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 9.5,
+      "cpu_pct": 171.9,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 117,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.9,
+      "cpu_pct": 356.9,
+      "peak_memory_mb": 3687,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 470.5,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.6,
+      "cpu_pct": 325.3,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.5,
+      "cpu_pct": 376.5,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 119,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.4,
+      "cpu_pct": 287.5,
+      "peak_memory_mb": 3072,
+      "disk_read_mb": 117,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.5,
+      "cpu_pct": 484.6,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 116,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.5,
+      "cpu_pct": 397.8,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 4.9,
+      "cpu_pct": 304.6,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 174,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.9,
+      "cpu_pct": 191.2,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 189,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 4.9,
+      "cpu_pct": 374.6,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 167,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 4.2,
+      "cpu_pct": 336.3,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 179,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 473.3,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 163,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 393,
+      "peak_memory_mb": 6042,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.6,
+      "cpu_pct": 396,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 5.1,
+      "cpu_pct": 329.9,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 4.9,
+      "cpu_pct": 231.1,
+      "peak_memory_mb": 3277,
+      "disk_read_mb": 175,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 463.9,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 162,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_correlation",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 4.4,
+      "cpu_pct": 399,
+      "peak_memory_mb": 6042,
+      "disk_read_mb": 158,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.8,
+      "cpu_pct": 326.9,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6,
+      "cpu_pct": 382.3,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 130,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.7,
+      "cpu_pct": 274,
+      "peak_memory_mb": 4096,
+      "disk_read_mb": 132,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.6,
+      "cpu_pct": 338.8,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 128,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.2,
+      "cpu_pct": 373.7,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 130,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.5,
+      "cpu_pct": 345.6,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 128,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.7,
+      "cpu_pct": 365.4,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.4,
+      "cpu_pct": 376.7,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.8,
+      "cpu_pct": 324.5,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6,
+      "cpu_pct": 330,
+      "peak_memory_mb": 4813,
+      "disk_read_mb": 130,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.5,
+      "cpu_pct": 230.3,
+      "peak_memory_mb": 3380,
+      "disk_read_mb": 128,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.6,
+      "cpu_pct": 254.6,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 127,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 12.6,
+      "cpu_pct": 229.6,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 13.3,
+      "cpu_pct": 243.1,
+      "peak_memory_mb": 6452,
+      "disk_read_mb": 185,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 11.9,
+      "cpu_pct": 247.1,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 199,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 13,
+      "cpu_pct": 231.9,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 178,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 11.7,
+      "cpu_pct": 218.7,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 190,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 11.1,
+      "cpu_pct": 245,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 173,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 13.6,
+      "cpu_pct": 202,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 13.9,
+      "cpu_pct": 208.8,
+      "peak_memory_mb": 6452,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 13.4,
+      "cpu_pct": 227.9,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 13,
+      "cpu_pct": 172.1,
+      "peak_memory_mb": 3789,
+      "disk_read_mb": 185,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 14.9,
+      "cpu_pct": 161.2,
+      "peak_memory_mb": 4916,
+      "disk_read_mb": 173,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_correlation_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 12.5,
+      "cpu_pct": 253.3,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 169,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 419.8,
+      "peak_memory_mb": 5632,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 523.6,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 119,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.9,
+      "cpu_pct": 373.8,
+      "peak_memory_mb": 3584,
+      "disk_read_mb": 121,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 528.6,
+      "peak_memory_mb": 5632,
+      "disk_read_mb": 117,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.1,
+      "cpu_pct": 495.6,
+      "peak_memory_mb": 5632,
+      "disk_read_mb": 120,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 504.7,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 117,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.4,
+      "cpu_pct": 584.2,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.6,
+      "cpu_pct": 548.5,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.7,
+      "cpu_pct": 546.4,
+      "peak_memory_mb": 5632,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.4,
+      "cpu_pct": 397.2,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 119,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 305,
+      "peak_memory_mb": 2970,
+      "disk_read_mb": 117,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 435.3,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 116,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.9,
+      "cpu_pct": 484.9,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.5,
+      "cpu_pct": 366,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 174,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.6,
+      "cpu_pct": 472.1,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 189,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.5,
+      "cpu_pct": 339.7,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 167,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.5,
+      "cpu_pct": 444.6,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 179,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 418.1,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 163,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.8,
+      "cpu_pct": 503.4,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 467.4,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.6,
+      "cpu_pct": 363.6,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 300.6,
+      "peak_memory_mb": 3277,
+      "disk_read_mb": 175,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.8,
+      "cpu_pct": 531.6,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 162,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_cosine_sim",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.5,
+      "cpu_pct": 289.8,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 158,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.3,
+      "cpu_pct": 326.5,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7,
+      "cpu_pct": 361.7,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 130,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.7,
+      "cpu_pct": 248.6,
+      "peak_memory_mb": 3482,
+      "disk_read_mb": 132,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.1,
+      "cpu_pct": 341.1,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 128,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.5,
+      "cpu_pct": 354.8,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 130,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7,
+      "cpu_pct": 363.1,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 128,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 5.9,
+      "cpu_pct": 305.4,
+      "peak_memory_mb": 4096,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 10.9,
+      "cpu_pct": 222.9,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.3,
+      "cpu_pct": 346,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 10.5,
+      "cpu_pct": 240.5,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 130,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.8,
+      "cpu_pct": 245.2,
+      "peak_memory_mb": 3482,
+      "disk_read_mb": 128,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.1,
+      "cpu_pct": 278,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 127,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 9,
+      "cpu_pct": 255.1,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 8.9,
+      "cpu_pct": 260.4,
+      "peak_memory_mb": 6656,
+      "disk_read_mb": 185,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 8.6,
+      "cpu_pct": 326.8,
+      "peak_memory_mb": 6656,
+      "disk_read_mb": 200,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 8.5,
+      "cpu_pct": 329.6,
+      "peak_memory_mb": 6656,
+      "disk_read_mb": 178,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 9.1,
+      "cpu_pct": 265.6,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 190,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.3,
+      "cpu_pct": 322.9,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 173,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7,
+      "cpu_pct": 348.5,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.2,
+      "cpu_pct": 328.2,
+      "peak_memory_mb": 6554,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 8.5,
+      "cpu_pct": 283.1,
+      "peak_memory_mb": 6656,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 8.3,
+      "cpu_pct": 218,
+      "peak_memory_mb": 3892,
+      "disk_read_mb": 185,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.9,
+      "cpu_pct": 257.6,
+      "peak_memory_mb": 5325,
+      "disk_read_mb": 173,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_cosine_sim_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 11.3,
+      "cpu_pct": 199,
+      "peak_memory_mb": 6452,
+      "disk_read_mb": 169,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 495.3,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 514.5,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 119,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 291,
+      "peak_memory_mb": 3072,
+      "disk_read_mb": 121,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 399.1,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 117,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 496.1,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 120,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.1,
+      "cpu_pct": 468.1,
+      "peak_memory_mb": 5632,
+      "disk_read_mb": 117,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.6,
+      "cpu_pct": 411.8,
+      "peak_memory_mb": 3687,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 420.8,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.1,
+      "cpu_pct": 460.4,
+      "peak_memory_mb": 5632,
+      "disk_read_mb": 122,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.4,
+      "cpu_pct": 388.3,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 119,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.1,
+      "cpu_pct": 304.8,
+      "peak_memory_mb": 2970,
+      "disk_read_mb": 117,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 501.9,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 116,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.1,
+      "cpu_pct": 463.1,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.4,
+      "cpu_pct": 512.4,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 174,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.8,
+      "cpu_pct": 506,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 189,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.6,
+      "cpu_pct": 437.2,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 167,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.6,
+      "cpu_pct": 474.8,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 179,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.2,
+      "cpu_pct": 466,
+      "peak_memory_mb": 6042,
+      "disk_read_mb": 163,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.9,
+      "cpu_pct": 533.9,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 2.9,
+      "cpu_pct": 514.1,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.5,
+      "cpu_pct": 385.4,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.6,
+      "cpu_pct": 274.2,
+      "peak_memory_mb": 3072,
+      "disk_read_mb": 175,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 465,
+      "peak_memory_mb": 5940,
+      "disk_read_mb": 162,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_rowwise_error",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.5,
+      "cpu_pct": 491.1,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 158,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7,
+      "cpu_pct": 384.4,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.1,
+      "cpu_pct": 373.5,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 130,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.4,
+      "cpu_pct": 375,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 132,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.1,
+      "cpu_pct": 313.7,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 128,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.2,
+      "cpu_pct": 317.8,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 130,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.9,
+      "cpu_pct": 300.2,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 128,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 5.9,
+      "cpu_pct": 405.3,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 5.5,
+      "cpu_pct": 418,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7,
+      "cpu_pct": 320.7,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 133,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.3,
+      "cpu_pct": 292.6,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 130,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.8,
+      "cpu_pct": 246.9,
+      "peak_memory_mb": 3380,
+      "disk_read_mb": 128,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7,
+      "cpu_pct": 306.8,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 127,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "ground_truth",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.2,
+      "cpu_pct": 340.8,
+      "peak_memory_mb": 6349,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "jn_ap_op2",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.7,
+      "cpu_pct": 380.4,
+      "peak_memory_mb": 6349,
+      "disk_read_mb": 185,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "lgc_ensemble",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7,
+      "cpu_pct": 293.2,
+      "peak_memory_mb": 6349,
+      "disk_read_mb": 199,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_celltypes",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 10.8,
+      "cpu_pct": 217.9,
+      "peak_memory_mb": 6452,
+      "disk_read_mb": 178,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_across_compounds",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.1,
+      "cpu_pct": 364.2,
+      "peak_memory_mb": 6349,
+      "disk_read_mb": 190,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "mean_outcome",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 5.8,
+      "cpu_pct": 339.3,
+      "peak_memory_mb": 6349,
+      "disk_read_mb": 173,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.3,
+      "cpu_pct": 377.5,
+      "peak_memory_mb": 6349,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "pyboost",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 5.4,
+      "cpu_pct": 413.2,
+      "peak_memory_mb": 6452,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "sample",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.8,
+      "cpu_pct": 326.2,
+      "peak_memory_mb": 6452,
+      "disk_read_mb": 203,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "scape",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.6,
+      "cpu_pct": 248.9,
+      "peak_memory_mb": 3687,
+      "disk_read_mb": 185,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "transformer_ensemble",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6,
+      "cpu_pct": 374.5,
+      "peak_memory_mb": 6349,
+      "disk_read_mb": 173,
+      "disk_write_mb": 1
+    }
+  },
+  {
+    "dataset_id": "neurips-2023-kaggle",
+    "normalization_id": null,
+    "method_id": "zeros",
+    "metric_id": "mean_rowwise_error_r",
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.5,
+      "cpu_pct": 391.7,
+      "peak_memory_mb": 6452,
+      "disk_read_mb": 169,
+      "disk_write_mb": 1
+    }
+  }
+]
