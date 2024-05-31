@@ -122,9 +122,12 @@ stability_long <- stability_long %>%
 
 # filter metrics
 metric_ids <- c("mean_rowwise_mae_r", "mean_cosine_sim_r")
+dataset_ids <- c("neurips-2023-data")
+
+dataset_info <- dataset_info %>% filter(dataset_id %in% dataset_ids)
 metric_info <- metric_info %>% filter(metric_id %in% metric_ids)
-results_long <- results_long %>% filter(metric_id %in% metric_ids)
-stability_long <- stability_long %>% filter(orig_metric_id %in% metric_ids)
+results_long <- results_long %>% filter(metric_id %in% metric_ids, dataset_id %in% dataset_ids)
+stability_long <- stability_long %>% filter(orig_metric_id %in% metric_ids, dataset_id %in% dataset_ids)
 
 # combine stability results info main results
 stab_met_id <- unique(stability_long$metric_id)
