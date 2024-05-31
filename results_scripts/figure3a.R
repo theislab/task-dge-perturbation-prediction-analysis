@@ -121,21 +121,13 @@ stability_long <- stability_long %>%
 
 
 # filter metrics
-metric_ids <- c("mean_rowwise_mae_r", "mean_cosine_sim_r")
+metric_ids <- c("mean_rowwise_mae_r", "mean_rowwise_rmse_clipped_0001_r", "mean_cosine_sim_r")
 dataset_ids <- c("neurips-2023-data")
 
 dataset_info <- dataset_info %>% filter(dataset_id %in% dataset_ids)
 metric_info <- metric_info %>% filter(metric_id %in% metric_ids)
 results_long <- results_long %>% filter(metric_id %in% metric_ids, dataset_id %in% dataset_ids)
 stability_long <- stability_long %>% filter(orig_metric_id %in% metric_ids, dataset_id %in% dataset_ids)
-
-# combine stability results info main results
-stab_met_id <- unique(stability_long$metric_id)
-stability_info <- tibble(
-  metric_id = stab_met_id,
-  metric_name = gsub("_", " ", stab_met_id),
-  maximize = FALSE
-)
 
 # compute ranking
 overall_ranking <-
@@ -146,7 +138,6 @@ overall_ranking <-
 
 # order by ranking
 results_long$method_id <- factor(results_long$method_id, levels = rev(overall_ranking$method_id))
-# results$method_id <- factor(results$method_id, levels = rev(overall_ranking$method_id))
 method_info$method_id <- factor(method_info$method_id, levels = rev(overall_ranking$method_id))
 
 # create aggregated results
@@ -163,7 +154,7 @@ per_metric <- results_long %>%
 per_stability <- stability_long %>%
   group_by(method_id, metric_id) %>%
   summarise(score = aggregate_scores(score), .groups = "drop") %>%
-  mutate(metric_id = paste0("metric_", metric_id)) %>%
+  mutate(metric_id = paste0("stability_", metric_id)) %>%
   spread(metric_id, score)
 
 # resources
@@ -203,78 +194,77 @@ resources <- results_resources %>%
 
 # combine into summary table
 summary_all <-
-  method_info %>%
+  overall_ranking %>%
   filter(!method_id %in% c("sample", "zeros", "ground_truth")) %>%
-  select(method_id, method_name) %>%
-  inner_join(overall_ranking, by = "method_id") %>%
+  inner_join(method_info %>% transmute(method_id, method_name, is_control_str = ifelse(is_baseline, "Yes", "No")), by = "method_id") %>%
   left_join(per_dataset, by = "method_id") %>%
   left_join(per_metric, by = "method_id") %>%
   left_join(per_stability, by = "method_id") %>%
-  left_join(resources, by = "method_id") %>%
-  arrange(desc(overall_score))
+  left_join(resources, by = "method_id")
+
+for (col in colnames(summary_all)) {
+  if (is.numeric(summary_all[[col]])) {
+    summary_all[[paste0(col, "_scaled")]] <- dynutils::scale_minmax(summary_all[[col]])
+    summary_all[[paste0(col, "_rank")]] <- dynutils::scale_minmax(rank(summary_all[[col]]))
+  }
+}
 
 # create column info
 column_info <-
   bind_rows(
     tribble(
-      ~id, ~name, ~group, ~geom, ~palette,
-      "method_name", "Name", "method", "text", NA_character_,
-      "overall_score", "Score", "overall", "bar", "overall",
-    ),
-    dataset_info %>% transmute(
-      id = paste0("dataset_", dataset_id),
-      name = dataset_name,
-      group = "dataset",
-      geom = "funkyrect",
-      palette = "dataset"
+      ~id, ~id_color, ~name, ~group, ~geom, ~palette, ~options,
+      "method_name", NA_character_, "Name", "method", "text", NA_character_, list(width = 10, hjust = 0),
+      "is_control_str", NA_character_, "Is control?", "method", "text", NA_character_, list(width = 2),
+      "overall_score", "overall_score_rank", "Score", "overall", "bar", "overall", list(width = 4),
     ),
     metric_info %>% transmute(
-      id = paste0("metric_", metric_id),
+      id = paste0("metric_", metric_id, ""),
+      id_color = paste0("metric_", metric_id, "_rank"),
       name = metric_name,
       group = "metric",
       geom = "funkyrect",
       palette = "metric"
     ),
-    stability_info %>% transmute(
-      id = paste0("metric_", metric_id),
-      name = metric_name,
+    tibble(
+      col_id = sort(unique(stability_long$metric_id)),
+      id = paste0("stability_", col_id),
+      id_color = paste0("stability_", col_id, "_rank"),
+      name = stringr::str_to_title(gsub("_", " ", gsub("_r_", "_", col_id))),
       group = "stability",
       geom = "funkyrect",
       palette = "stability"
-    ),
+    ) %>% select(-col_id),
     tribble(
-      ~id, ~name, ~label, ~geom,
-      "mean_cpu_pct", "%CPU", NA_character_, "funkyrect"
-      # "mean_peak_memory_log", "Peak memory", "mean_peak_memory_str", "rect",
-      # "mean_disk_read_log", "Disk read", "mean_disk_read_str", "rect",
-      # "mean_disk_write_log", "Disk write", "mean_disk_write_str", "rect",
-      # "mean_duration_log", "Duration", "mean_duration_str", "rect"
+      ~id, ~name, ~geom,
+      "mean_cpu_pct_scaled", "%CPU", "funkyrect",
+      "mean_peak_memory_log_scaled", "Peak memory", "rect",
+      "mean_peak_memory_str", "", "text",
+      "mean_disk_read_log_scaled", "Disk read", "rect",
+      "mean_disk_read_str", "", "text",
+      "mean_disk_write_log_scaled", "Disk write", "rect",
+      "mean_disk_write_str", "", "text",
+      "mean_duration_log_scaled", "Duration", "rect",
+      "mean_duration_str", "", "text"
     ) %>% mutate(
       group = "resources",
-      palette = "resources"
+      palette = ifelse(geom == "text", NA_character_, "resources"),
+      options = map(geom, function(geom) {
+        if (geom == "text") {
+          list(overlay = TRUE, size = 2.5)
+        } else {
+          list()
+        }
+      })
     )
-  ) %>%
-  mutate(
-    options = map2(id, geom, function(id, geom) {
-      if (id == "method_name") {
-        list(width = 15, hjust = 0)
-      } else if (id == "is_baseline") {
-        list(width = 1)
-      } else if (geom == "bar") {
-        list(width = 4)
-      } else {
-        list()
-      }
-    }
   )
-)
 
 # create column groups
 column_groups <- tribble(
   ~group, ~palette, ~level1,
   "method", NA_character_, "",
   "overall", "overall", "Overall",
-  "dataset", "dataset", "Datasets",
+  # "dataset", "dataset", "Datasets",
   "metric", "metric", "Metrics",
   "stability", "stability", "Stability",
   "resources", "resources", "Resources"
@@ -283,14 +273,36 @@ column_groups <- tribble(
 # create palettes
 palettes <- list(
   overall = "Greys",
-  dataset = "Blues",
+  # dataset = "Blues",
   metric = "Reds",
   stability = "Greens",
   resources = "YlOrBr"
 )
 
-# legends <- funkyheatmap::verify_legends(NULL, palettes, column_info, summary_all)
+# create palettes
+legends <- list(
+  list(
+    title = "Rank",
+    palette = "overall",
+    geom = "rect",
+    labels = c("worst", " ", "", " ", "best"),
+    size = c(1, 1, 1, 1, 1)
+  ),
+  list(
+    title = "Scaled score",
+    palette = "overall",
+    geom = "funkyrect",
+    labels = c("0", "", "", "", "0.4", "", "0.6", "", "0.8", "", "1"),
+    size = seq(0, 1, by = .1)
+  ),
+  list(palette = "metric", enabled = FALSE),
+  list(palette = "stability", enabled = FALSE),
+  list(palette = "resources", enabled = FALSE)
+)
+# legend examples:
+# funkyheatmap::verify_legends(legends, palettes, column_info, summary_all)
 
+# create funkyheatmap
 g_all <- funky_heatmap(
   data = summary_all,
   column_info = column_info %>% filter(id %in% colnames(summary_all)),
@@ -303,13 +315,13 @@ g_all <- funky_heatmap(
     col_annot_offset = max(str_length(column_info$name)) / 5
   ),
   add_abc = FALSE,
-  scale_column = TRUE
+  scale_column = FALSE,
+  legends = legends,
 )
-g_all
-
 ggsave(
   "plots/figure3a.pdf",
   g_all,
   width = g_all$width,
   height = g_all$height
 )
+
