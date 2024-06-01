@@ -22,9 +22,11 @@ column_info <-
     ),
     tribble(
       ~id, ~name,
-      "metric_mean_cosine_sim_r", "Mean Cosine",
+      "metric_mean_cosine_sim_r", "Mean Rowwise Cosine",
       "metric_mean_rowwise_mae_r", "Mean Rowwise MAE",
-      "metric_mean_rowwise_rmse_clipped_0001_r", "Mean Rowwise RMSE (clipped)"
+      "metric_mean_pearson_r", "Mean Rowwise Pearson",
+      "metric_mean_rowwise_rmse_r", "Mean Rowwise RMSE",
+      "metric_mean_spearman_r", "Mean Rowwise Spearman"
     ) %>%
       mutate(
         id_color = paste0(id, "_rank"),
@@ -38,8 +40,8 @@ column_info <-
       "stability_mean_cosine_sim_r_var", "%Diff Mean Cosine",
       "stability_mean_rowwise_mae_r_pct_diff", "Var Mean Rowwise MAE",
       "stability_mean_rowwise_mae_r_var", "%Diff Mean Rowwise MAE",
-      "stability_mean_rowwise_rmse_clipped_0001_r_pct_diff", "Var Mean Rowwise RMSE (clipped)",
-      "stability_mean_rowwise_rmse_clipped_0001_r_var", "%Diff Mean Rowwise RMSE (clipped)"
+      "stability_mean_rowwise_rmse_r_pct_diff", "Var Mean Rowwise RMSE",
+      "stability_mean_rowwise_rmse_r_var", "%Diff Mean Rowwise RMSE"
     ) %>%
       mutate(
         id_color = paste0(id, "_rank"),
@@ -129,9 +131,8 @@ g_all <- funky_heatmap(
   legends = legends,
 )
 ggsave(
-  "plots/figure3a.pdf",
+  "plots/figure4b.pdf",
   g_all,
   width = g_all$width,
   height = g_all$height
 )
-

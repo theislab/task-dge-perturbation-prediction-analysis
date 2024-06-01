@@ -119,7 +119,7 @@ stability_long <- stability_long %>%
 
 
 # filter metrics
-metric_ids <- c("mean_rowwise_mae_r", "mean_rowwise_rmse_clipped_0001_r", "mean_cosine_sim_r")
+metric_ids <- c("mean_rowwise_mae_r", "mean_rowwise_rmse_r", "mean_cosine_sim_r", "mean_pearson_r", "mean_spearman_r")
 dataset_ids <- c("neurips-2023-data")
 
 dataset_info <- dataset_info %>% filter(dataset_id %in% dataset_ids)

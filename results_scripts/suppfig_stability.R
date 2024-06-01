@@ -12,7 +12,7 @@ results <- jsonlite::read_json(paste0(params$data_dir, "/results.json"), simplif
 # qc <- jsonlite::read_json(paste0(params$data_dir, "/quality_control.json"), simplifyVector = TRUE)
 stability <- yaml::read_yaml(paste0(params$data_dir, "/stability_uns.yaml"))
 
-# based on the figure3a result
+# based on the figure4b result
 method_ids <- c(
   "ground_truth",
   "nn_retraining_with_pseudolabels",
