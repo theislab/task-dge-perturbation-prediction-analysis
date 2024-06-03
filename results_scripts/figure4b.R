@@ -164,3 +164,42 @@ ggsave(
   width = g_all$width,
   height = g_all$height
 )
+
+
+# create funkyheatmap
+g_all1 <- funky_heatmap(
+  data = summary_all %>% filter(!method_id %in% c("sample", "zeros", "ground_truth", "mean_outcome", "mean_across_compounds")),
+  column_info = column_info %>% filter(id %in% colnames(summary_all)),
+  column_groups = column_groups,
+  palettes = palettes,
+  position_args = position_arguments(
+    # determine xmax expand heuristically
+    expand_xmax = 2,
+    # determine offset heuristically
+    col_annot_offset = max(str_length(column_info$name)) / 5
+  ),
+  add_abc = FALSE,
+  scale_column = FALSE,
+  legends = legends,
+)
+g_all2 <- funky_heatmap(
+  data = summary_all %>% filter(!method_id %in% c("sample", "zeros", "ground_truth", "mean_outcome", "mean_across_compounds")),
+  column_info = column_info %>% filter(id %in% colnames(summary_all)),
+  column_groups = column_groups,
+  palettes = palettes,
+  position_args = position_arguments(
+    # determine xmax expand heuristically
+    expand_xmax = 2,
+    # determine offset heuristically
+    col_annot_offset = max(str_length(column_info$name)) / 5
+  ),
+  add_abc = FALSE,
+  scale_column = TRUE,
+  legends = legends,
+)
+ggsave(
+  "plots/figure4b_altbis.pdf",
+  patchwork::wrap_plots(g_all1, patchwork::plot_spacer(), g_all2, ncol = 1, heights = c(1, .05, 1)),
+  width = max(g_all1$width, g_all2$width),
+  height = (g_all1$height + g_all2$height) / 2 * 2.05
+)
