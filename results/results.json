@@ -1,0 +1,350 @@
+[
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "ground_truth",
+    "metric_values": {
+      "mean_rowwise_cosine": 1,
+      "mean_rowwise_mae": 0,
+      "mean_rowwise_pearson": 1,
+      "mean_rowwise_rmse": 0,
+      "mean_rowwise_spearman": 1
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 1,
+      "mean_rowwise_mae": 1,
+      "mean_rowwise_pearson": 1,
+      "mean_rowwise_rmse": 1,
+      "mean_rowwise_spearman": 1
+    },
+    "mean_score": 1,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6.5,
+      "cpu_pct": 336.7,
+      "peak_memory_mb": 6144,
+      "disk_read_mb": 135,
+      "disk_write_mb": 6
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "jn_ap_op2",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.3291,
+      "mean_rowwise_mae": 0.6493,
+      "mean_rowwise_pearson": 0.3267,
+      "mean_rowwise_rmse": 0.8939,
+      "mean_rowwise_spearman": 0.3061
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.3291,
+      "mean_rowwise_mae": 0.3258,
+      "mean_rowwise_pearson": 0.3267,
+      "mean_rowwise_rmse": 0.3442,
+      "mean_rowwise_spearman": 0.3061
+    },
+    "mean_score": 0.3264,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3028,
+      "cpu_pct": 99.6,
+      "peak_memory_mb": 14439,
+      "disk_read_mb": 225,
+      "disk_write_mb": 4
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "lgc_ensemble",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.4542,
+      "mean_rowwise_mae": 0.584,
+      "mean_rowwise_pearson": 0.4503,
+      "mean_rowwise_rmse": 0.8016,
+      "mean_rowwise_spearman": 0.4238
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.4542,
+      "mean_rowwise_mae": 0.3936,
+      "mean_rowwise_pearson": 0.4503,
+      "mean_rowwise_rmse": 0.4119,
+      "mean_rowwise_spearman": 0.4238
+    },
+    "mean_score": 0.4268,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 6986,
+      "cpu_pct": 6362,
+      "peak_memory_mb": 44647,
+      "disk_read_mb": 12433,
+      "disk_write_mb": 3592
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "mean_across_celltypes",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.3017,
+      "mean_rowwise_mae": 0.6437,
+      "mean_rowwise_pearson": 0.2972,
+      "mean_rowwise_rmse": 0.8925,
+      "mean_rowwise_spearman": 0.2806
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.3017,
+      "mean_rowwise_mae": 0.3316,
+      "mean_rowwise_pearson": 0.2972,
+      "mean_rowwise_rmse": 0.3453,
+      "mean_rowwise_spearman": 0.2806
+    },
+    "mean_score": 0.3113,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.2,
+      "cpu_pct": 177.2,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 192,
+      "disk_write_mb": 2
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "mean_across_compounds",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.2628,
+      "mean_rowwise_mae": 0.6979,
+      "mean_rowwise_pearson": 0.2594,
+      "mean_rowwise_rmse": 0.9428,
+      "mean_rowwise_spearman": 0.2425
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.2628,
+      "mean_rowwise_mae": 0.2754,
+      "mean_rowwise_pearson": 0.2594,
+      "mean_rowwise_rmse": 0.3083,
+      "mean_rowwise_spearman": 0.2425
+    },
+    "mean_score": 0.2697,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.3,
+      "cpu_pct": 374.8,
+      "peak_memory_mb": 5837,
+      "disk_read_mb": 192,
+      "disk_write_mb": 4
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "mean_outcome",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.2264,
+      "mean_rowwise_mae": 0.6356,
+      "mean_rowwise_pearson": 0.2198,
+      "mean_rowwise_rmse": 0.8992,
+      "mean_rowwise_spearman": 0.2117
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.2264,
+      "mean_rowwise_mae": 0.34,
+      "mean_rowwise_pearson": 0.2198,
+      "mean_rowwise_rmse": 0.3403,
+      "mean_rowwise_spearman": 0.2117
+    },
+    "mean_score": 0.2677,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3,
+      "cpu_pct": 491.7,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "nn_retraining_with_pseudolabels",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.4932,
+      "mean_rowwise_mae": 0.5469,
+      "mean_rowwise_pearson": 0.49,
+      "mean_rowwise_rmse": 0.7568,
+      "mean_rowwise_spearman": 0.4617
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.4932,
+      "mean_rowwise_mae": 0.4321,
+      "mean_rowwise_pearson": 0.49,
+      "mean_rowwise_rmse": 0.4448,
+      "mean_rowwise_spearman": 0.4617
+    },
+    "mean_score": 0.4644,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 1701,
+      "cpu_pct": 638.2,
+      "peak_memory_mb": 36045,
+      "disk_read_mb": 234,
+      "disk_write_mb": 7
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "pyboost",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.4651,
+      "mean_rowwise_mae": 0.5603,
+      "mean_rowwise_pearson": 0.462,
+      "mean_rowwise_rmse": 0.7949,
+      "mean_rowwise_spearman": 0.4405
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.4651,
+      "mean_rowwise_mae": 0.4182,
+      "mean_rowwise_pearson": 0.462,
+      "mean_rowwise_rmse": 0.4168,
+      "mean_rowwise_spearman": 0.4405
+    },
+    "mean_score": 0.4405,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 165,
+      "cpu_pct": 114.8,
+      "peak_memory_mb": 15668,
+      "disk_read_mb": 250,
+      "disk_write_mb": 12
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "sample",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.0536,
+      "mean_rowwise_mae": 0.9631,
+      "mean_rowwise_pearson": 0.0514,
+      "mean_rowwise_rmse": 1.3631,
+      "mean_rowwise_spearman": 0.0548
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.0536,
+      "mean_rowwise_mae": 0,
+      "mean_rowwise_pearson": 0.0514,
+      "mean_rowwise_rmse": 0,
+      "mean_rowwise_spearman": 0.0548
+    },
+    "mean_score": 0.032,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 7.2,
+      "cpu_pct": 324.7,
+      "peak_memory_mb": 6247,
+      "disk_read_mb": 204,
+      "disk_write_mb": 6
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "scape",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.4754,
+      "mean_rowwise_mae": 0.5726,
+      "mean_rowwise_pearson": 0.4724,
+      "mean_rowwise_rmse": 0.7754,
+      "mean_rowwise_spearman": 0.4412
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.4754,
+      "mean_rowwise_mae": 0.4055,
+      "mean_rowwise_pearson": 0.4724,
+      "mean_rowwise_rmse": 0.4311,
+      "mean_rowwise_spearman": 0.4412
+    },
+    "mean_score": 0.4451,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 10079,
+      "cpu_pct": 134.2,
+      "peak_memory_mb": 67482,
+      "disk_read_mb": 228,
+      "disk_write_mb": 24269
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "transformer_ensemble",
+    "metric_values": {
+      "mean_rowwise_cosine": 0.2245,
+      "mean_rowwise_mae": 0.6277,
+      "mean_rowwise_pearson": 0.2189,
+      "mean_rowwise_rmse": 0.8974,
+      "mean_rowwise_spearman": 0.2142
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0.2245,
+      "mean_rowwise_mae": 0.3483,
+      "mean_rowwise_pearson": 0.2189,
+      "mean_rowwise_rmse": 0.3417,
+      "mean_rowwise_spearman": 0.2142
+    },
+    "mean_score": 0.2695,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 8095,
+      "cpu_pct": 139.4,
+      "peak_memory_mb": 14848,
+      "disk_read_mb": 224,
+      "disk_write_mb": 12
+    },
+    "task_id": "dge_perturbation_prediction"
+  },
+  {
+    "dataset_id": "neurips-2023-data",
+    "method_id": "zeros",
+    "metric_values": {
+      "mean_rowwise_cosine": 0,
+      "mean_rowwise_mae": 0.6351,
+      "mean_rowwise_pearson": 0,
+      "mean_rowwise_rmse": 0.9179,
+      "mean_rowwise_spearman": 0
+    },
+    "scaled_scores": {
+      "mean_rowwise_cosine": 0,
+      "mean_rowwise_mae": 0.3406,
+      "mean_rowwise_pearson": 0,
+      "mean_rowwise_rmse": 0.3266,
+      "mean_rowwise_spearman": 0
+    },
+    "mean_score": 0.1334,
+    "normalization_id": null,
+    "resources": {
+      "exit_code": 0,
+      "duration_sec": 3.6,
+      "cpu_pct": 412,
+      "peak_memory_mb": 5735,
+      "disk_read_mb": 192,
+      "disk_write_mb": 1
+    },
+    "task_id": "dge_perturbation_prediction"
+  }
+]

@@ -1,0 +1,9 @@
+id: process
+output_scores: !file results.json
+output_method_info: !file method_info.json
+output_metric_info: !file metric_info.json
+output_dataset_info: !file dataset_info.json
+output_task_info: !file task_info.json
+output_qc: !file quality_control.json
+output_metric_execution_info: !file metric_execution_info.json
+

@@ -162,3 +162,7 @@ cython_debug/
 data/
 .DS_Store
 .idea/
+
+# nextflow
+work
+.nextflow*

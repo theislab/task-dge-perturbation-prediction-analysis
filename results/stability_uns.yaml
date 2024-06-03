@@ -1,0 +1,2640 @@
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7807054587
+  - 0.5514917172
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17861678697
+  - 0.16949770682
+  - 0.18171633703
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3984262114
+  - 0.3631785435
+  - 0.4000185602
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.27837391589
+  - 0.25911141035
+  - 0.28023712269
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.26590663294
+  - 0.24820387455
+  - 0.26778301618
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.26819370811
+  - 0.25026791469
+  - 0.27068049145
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7955964789
+  - 0.5432045423
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3773415353
+  - 0.3479482605
+  - 0.3784640493
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7118989499
+  - 0.5064346876
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17941599918
+  - 0.17049707878
+  - 0.18135871594
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7271490229
+  - 0.5062450382
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8817196023
+  - 0.6514941616
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.368877059
+  - 0.3356266198
+  - 0.3709628607
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03882781919
+  - 0.03799293423
+  - 0.03978595245
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7270880474
+  - 0.5053269478
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.24058320362
+  - 0.21745150027
+  - 0.24278595281
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7104738895
+  - 0.5036889373
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.27746215712
+  - 0.26048932016
+  - 0.27926749677
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1807721126
+  - 0.8348175606
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17447621591
+  - 0.15617524775
+  - 0.17685486906
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8339227583
+  - 0.5991020628
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7292216993
+  - 0.5306522023
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8441850338
+  - 0.6066332676
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7883589911
+  - 0.5427620351
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7245793364
+  - 0.5282541285
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7836702715
+  - 0.5402073183
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.1779392455
+  - 0.16642603344
+  - 0.18038815951
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.27545214688
+  - 0.25498221175
+  - 0.27764258378
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.4100037844
+  - 0.3734747656
+  - 0.4119175105
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7959501924
+  - 0.5529989962
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03552079602
+  - 0.03529921143
+  - 0.03585667481
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1795727677
+  - 0.8354304352
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1804173387
+  - 0.8356698315
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.359705629
+  - 0.3248165996
+  - 0.3629060604
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7910395832
+  - 0.5488297257
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3850601873
+  - 0.3539146588
+  - 0.3858952739
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7232086929
+  - 0.5032848594
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.705013527
+  - 0.5008435561
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3728047908
+  - 0.3442666417
+  - 0.3739611855
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1908984035
+  - 0.842224024
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.78534472
+  - 0.5454929608
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7223869618
+  - 0.5253532838
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3806629096
+  - 0.351550681
+  - 0.3826260038
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7835169941
+  - 0.5402960929
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8076197171
+  - 0.550661845
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7885551335
+  - 0.5475212098
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8003560037
+  - 0.5461213982
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17933489514
+  - 0.16901708549
+  - 0.18100215977
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1817664987
+  - 0.8362323155
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17746282053
+  - 0.16562042703
+  - 0.17857663158
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3986816679
+  - 0.3616709033
+  - 0.3990815691
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03804303331
+  - 0.03794960475
+  - 0.03931235061
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8352034486
+  - 0.601236345
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3831455142
+  - 0.3532150878
+  - 0.3848723473
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3812755335
+  - 0.3443737408
+  - 0.3826566833
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7783343267
+  - 0.5499307858
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1842803888
+  - 0.8381713572
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8406811033
+  - 0.6050273616
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17443413716
+  - 0.16099592157
+  - 0.17818058674
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17756509818
+  - 0.16641618514
+  - 0.18164168532
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8403046225
+  - 0.6051810363
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3775785748
+  - 0.3480850498
+  - 0.3781070253
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17954352188
+  - 0.16507981929
+  - 0.1808900142
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.728610606
+  - 0.5067684972
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.16966252659
+  - 0.15990733112
+  - 0.17015876208
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8332057458
+  - 0.5993476347
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7378642237
+  - 0.5239098354
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7784082587
+  - 0.5503131171
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.1749865471
+  - 0.15478804538
+  - 0.17663649632
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.4048162996
+  - 0.3669737322
+  - 0.4061733598
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1817163841
+  - 0.8361755725
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.23903915694
+  - 0.21600237497
+  - 0.24005170296
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7885926745
+  - 0.5434223132
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17395607335
+  - 0.15439904204
+  - 0.17568055706
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17842737951
+  - 0.16647931647
+  - 0.18308802198
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8806842615
+  - 0.6499570254
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7275573832
+  - 0.5053842983
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7275385944
+  - 0.5056173174
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7079261846
+  - 0.5021730162
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.24269195318
+  - 0.21674177368
+  - 0.24318872193
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03639464342
+  - 0.03585922559
+  - 0.03753693579
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03862769803
+  - 0.03767454414
+  - 0.03918291028
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.801313581
+  - 0.5462117415
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.24225222468
+  - 0.21775101136
+  - 0.24465248292
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8835969257
+  - 0.6516357231
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7741260914
+  - 0.5473241385
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7365518638
+  - 0.5240375309
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3870057608
+  - 0.3461820634
+  - 0.388219371
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7906780943
+  - 0.548941741
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3875930527
+  - 0.3481189285
+  - 0.3895738172
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7858292378
+  - 0.556314902
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03756657405
+  - 0.03824506483
+  - 0.03834510812
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.880217665
+  - 0.6497158702
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7839073701
+  - 0.5444770977
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3657912681
+  - 0.3308633302
+  - 0.3687595786
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7818983553
+  - 0.5388472734
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17166109124
+  - 0.15290438388
+  - 0.17397587225
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3766833365
+  - 0.3474453042
+  - 0.3793531016
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7209442158
+  - 0.5026644083
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.27043264774
+  - 0.25082825904
+  - 0.27034108215
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.1865759388
+  - 0.17672378088
+  - 0.19008286292
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3879101461
+  - 0.346796524
+  - 0.3903590261
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7256635924
+  - 0.528022075
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7221086737
+  - 0.502281713
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7894609782
+  - 0.5477714267
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17870822718
+  - 0.16522954602
+  - 0.18101141619
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17381313287
+  - 0.1628036462
+  - 0.17634589328
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.18561388422
+  - 0.17325734286
+  - 0.18931905798
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.383451311
+  - 0.3447570292
+  - 0.3862494059
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.26548185871
+  - 0.24743997399
+  - 0.26661704054
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3601722913
+  - 0.3259581814
+  - 0.3634199783
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7939611315
+  - 0.5415030831
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17321608055
+  - 0.15466486965
+  - 0.17561542642
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7086399939
+  - 0.5032009449
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17441034555
+  - 0.15426934795
+  - 0.17600690275
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.1764252897
+  - 0.16529477196
+  - 0.17718392603
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3920478606
+  - 0.3542222465
+  - 0.3940054931
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8833904573
+  - 0.6520257799
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7756061086
+  - 0.548648758
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8002161606
+  - 0.5455055664
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7090162383
+  - 0.5034454573
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7361468218
+  - 0.5231867366
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.24407253502
+  - 0.21873093906
+  - 0.24528867764
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8390985225
+  - 0.6038087017
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7267602681
+  - 0.5290006079
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7064167694
+  - 0.5026027518
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7940862318
+  - 0.5470857102
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17540008638
+  - 0.1657351122
+  - 0.17917564562
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7990612457
+  - 0.545366972
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7888335826
+  - 0.5433956755
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8831912393
+  - 0.6519409538
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7095739452
+  - 0.5043543586
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.4000616926
+  - 0.3630923273
+  - 0.4021656505
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3535821482
+  - 0.3193537992
+  - 0.3542621482
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7264619451
+  - 0.5157071175
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7898842398
+  - 0.5480177991
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7247148044
+  - 0.52692024
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7059960414
+  - 0.5015293124
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.4018972773
+  - 0.3649751105
+  - 0.4052260098
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7900225469
+  - 0.5485526785
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.4071251349
+  - 0.368163039
+  - 0.4097853474
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3805260442
+  - 0.3528910969
+  - 0.3820854423
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7096505424
+  - 0.5035496644
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7366386411
+  - 0.5247847571
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.724912699
+  - 0.5273617482
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.18293480487
+  - 0.17253103508
+  - 0.18401590348
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03666249828
+  - 0.03556161975
+  - 0.03709038862
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3649299725
+  - 0.3290344336
+  - 0.3660369551
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8006166311
+  - 0.546625837
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1785070042
+  - 0.8341317578
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7308046775
+  - 0.5184069498
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3805631254
+  - 0.3489699241
+  - 0.3811205486
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.24032573821
+  - 0.21549453983
+  - 0.24072159099
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.26862227003
+  - 0.2508742489
+  - 0.26985474423
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7219082013
+  - 0.5253131837
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8007939391
+  - 0.5462644549
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7941875326
+  - 0.5424490572
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03859890452
+  - 0.03861359176
+  - 0.04014929739
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7869053952
+  - 0.5422064178
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1809854348
+  - 0.8363974475
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8769135417
+  - 0.6475655913
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7301202734
+  - 0.5198381955
+- dataset_id: neurips-2023-data-bootstrap10
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8885167609
+  - 0.6556937215
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 1.1799860166
+  - 0.8354891855
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.72751953
+  - 0.5284872754
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8841155121
+  - 0.6522099776
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3577463683
+  - 0.3239721807
+  - 0.3593434508
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3819269023
+  - 0.3515430085
+  - 0.3843794807
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3843544903
+  - 0.3457946262
+  - 0.3849391854
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17523850134
+  - 0.16208960982
+  - 0.17641331182
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.360731545
+  - 0.3240869462
+  - 0.3619683886
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.24427048328
+  - 0.22070748317
+  - 0.24557016182
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.403054999
+  - 0.3648941798
+  - 0.4062117315
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.2390732498
+  - 0.21427153917
+  - 0.24004503763
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.26199091157
+  - 0.24398737801
+  - 0.26254309454
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3627590412
+  - 0.328040254
+  - 0.3651651196
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.23797406988
+  - 0.21369039861
+  - 0.23951883393
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03927177638
+  - 0.03850962183
+  - 0.04002858232
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.18444154052
+  - 0.17139948761
+  - 0.18731241428
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.4059199125
+  - 0.3683624424
+  - 0.4082215253
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.2372009888
+  - 0.21149841367
+  - 0.23842709897
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7855464506
+  - 0.5459918595
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7802992447
+  - 0.5516965446
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7328192123
+  - 0.5223870594
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7892047237
+  - 0.5434313898
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: sample
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.03790728051
+  - 0.0393776401
+  - 0.03957000047
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8320883848
+  - 0.5998912089
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17194695086
+  - 0.15243352672
+  - 0.17261519694
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: zeros
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.0
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7254698374
+  - 0.5278872714
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7797215015
+  - 0.5511036367
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: transformer_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7892471529
+  - 0.5441437223
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8854419847
+  - 0.6531325168
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.271188098
+  - 0.2519096756
+  - 0.27146402738
+- dataset_id: neurips-2023-data-bootstrap6
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17011295583
+  - 0.15192312284
+  - 0.17297252355
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_outcome
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17090823359
+  - 0.15830316538
+  - 0.17207297142
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3838811744
+  - 0.3448286769
+  - 0.3857525636
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7795765534
+  - 0.5513094263
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: nn_retraining_with_pseudolabels
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.403961543
+  - 0.364427295
+  - 0.404989212
+- dataset_id: neurips-2023-data-bootstrap9
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap4
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8354588924
+  - 0.6014399603
+- dataset_id: neurips-2023-data-bootstrap3
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.1718134498
+  - 0.15184315254
+  - 0.1735811689
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 1.0
+  - 1.0
+  - 1.0
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3857782
+  - 0.3467795899
+  - 0.3884734858
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: scape
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.3897827754
+  - 0.3497835187
+  - 0.3910368257
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: ground_truth
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.0
+  - 0.0
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.352427804
+  - 0.3168629199
+  - 0.3546344996
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: jn_ap_op2
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.8274398916
+  - 0.5968777622
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7233837627
+  - 0.5131201876
+- dataset_id: neurips-2023-data-bootstrap5
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7323094584
+  - 0.5100703267
+- dataset_id: neurips-2023-data-bootstrap8
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: lgc_ensemble
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7288828427
+  - 0.5170656769
+- dataset_id: neurips-2023-data-bootstrap2
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: pyboost
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.728578592
+  - 0.5068390592
+- dataset_id: neurips-2023-data-bootstrap7
+  date_created: 02-06-2024
+  file_size: 22264
+  method_id: mean_across_celltypes
+  metric_ids:
+  - mean_rowwise_rmse
+  - mean_rowwise_mae
+  metric_values:
+  - 0.7761892806
+  - 0.5491142416
+- dataset_id: neurips-2023-data-bootstrap1
+  date_created: 03-06-2024
+  file_size: 22264
+  method_id: mean_across_compounds
+  metric_ids:
+  - mean_rowwise_pearson
+  - mean_rowwise_spearman
+  - mean_rowwise_cosine
+  metric_values:
+  - 0.17453030758
+  - 0.15602311345
+  - 0.17693343004
