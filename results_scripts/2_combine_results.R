@@ -4,32 +4,7 @@ library(tidyverse)
 # https://github.com/openproblems-bio/website/blob/a5412e97fc564f73c4f22ab2d6b7f076c203ba2e/results/_include/_load_data.qmd
 
 # helper functions
-`%|%` <- function(x, y) {
-  ifelse(is.na(x), y, x)
-}
-aggregate_scores <- function(score) {
-  mean(pmin(1, pmax(0, score)) %|% 0)
-}
-label_time <- function(time) {
-  case_when(
-    time < 1e-5 ~ "0s",
-    time < 1 ~ "<1s",
-    time < 60 ~ paste0(floor(time), "s"),
-    time < 3600 ~ paste0(floor(time / 60), "m"),
-    time < 3600 * 24 ~ paste0(floor(time / 3600), "h"),
-    time < 3600 * 24 * 7 ~ paste0(floor(time / 3600 / 24), "d"),
-    !is.na(time) ~ ">7d",
-    TRUE ~ NA_character_
-  )
-}
-label_memory <- function(x, include_mb = FALSE) {
-  case_when(
-    x < 1e9 ~ "<1G",
-    x < 1e12 ~ paste0(round(x / 1e9), "G"),
-    !is.na(x) ~ ">1T",
-    TRUE ~ NA_character_
-  )
-}
+source("results_scripts/helpers.R")
 
 # read results
 params <- list(data_dir = "results")
@@ -41,7 +16,7 @@ results <- jsonlite::read_json(paste0(params$data_dir, "/results.json"), simplif
 qc <- jsonlite::read_json(paste0(params$data_dir, "/quality_control.json"), simplifyVector = TRUE)
 stability <- yaml::read_yaml(paste0(params$data_dir, "/stability_uns.yaml"))
 
-# transform results
+# normalise results
 results_long <-
   results %>%
     select(method_id, dataset_id, metric_values) %>%
@@ -51,24 +26,9 @@ results_long <-
     left_join(method_info %>% select(method_id, is_baseline), "method_id") %>%
     left_join(metric_info %>% select(metric_id, maximize), by = "metric_id")
 
-# compute scaling
-norm <- results_long %>%
-  group_by(dataset_id, metric_id) %>%
-  summarise(
-    min = min(value, na.rm = TRUE),
-    max = max(value, na.rm = TRUE),
-    .groups = "drop"
-  )
+results_long <- normalize_scores(results_long)$scaled
 
-results_long <- results_long %>%
-  left_join(norm, by = c("dataset_id", "metric_id")) %>%
-  mutate(
-    score = (value - min) / (max - min),
-    score = ifelse(maximize, score, 1 - score),
-    score = score %|% 0
-  )
-
-# process stability results
+# normalise stability results
 stability_long <- stability %>%
   map_dfr(as.data.frame) %>%
   as_tibble() %>%
@@ -78,54 +38,34 @@ stability_long <- stability %>%
     bootstrap = gsub(".*[-_]bootstrap([0-9]+).*", "\\1", dataset_id),
     dataset_id = gsub("[-_]bootstrap[0-9]+", "", dataset_id)
   ) %>%
-  left_join(metric_info %>% select("metric_id", "maximize"), by = "metric_id") %>%
-  left_join(norm, by = c("dataset_id", "metric_id")) %>%
-  mutate(
-    score = (value - min) / (max - min),
-    score = ifelse(maximize, score, 1 - score),
-    score = score %|% 0
-  )
+  left_join(method_info %>% select(method_id, is_baseline), "method_id") %>%
+  left_join(metric_info %>% select(metric_id, maximize), by = "metric_id")
 
-# compute metrics from stability_long
-stability_long <- stability_long %>%
-  left_join(results_long %>% select(method_id, dataset_id, metric_id, full_score = score), by = c("method_id", "dataset_id", "metric_id")) %>%
-  group_by(method_id, metric_id, dataset_id) %>%
-  summarise(
-    var = var(score),
-    pct_diff = mean((full_score - score) / full_score),
-    .groups = "drop"
-  ) %>%
-  gather(key = "stat", value = "value", var, pct_diff) %>%
-  mutate(orig_metric_id = metric_id, metric_id = paste0(metric_id, "_", stat)) %>%
-  mutate(maximize = c("var" = FALSE, "pct_diff" = FALSE)[stat]) %>%
-  left_join(method_info %>% select(method_id, is_baseline), "method_id")
-stability_norm <- stability_long %>%
-  filter(is_baseline) %>%
-  group_by(dataset_id, metric_id) %>%
-  summarise(
-    min = min(value, na.rm = TRUE),
-    max = max(value, na.rm = TRUE),
-    .groups = "drop"
-  )
-stability_long <- stability_long %>%
-  left_join(stability_norm, by = c("dataset_id", "metric_id")) %>%
-  group_by(dataset_id, metric_id) %>%
-  mutate(
-    score = (value - min) / (max - min),
-    score = ifelse(maximize, score, 1 - score),
-    score = score %|% 0
-  ) %>%
-  ungroup()
+stability_long <- normalize_scores(stability_long, groups = c("dataset_id", "metric_id", "bootstrap"))$scaled
 
-
-# filter metrics
-metric_ids <- c("mean_rowwise_mae_r", "mean_rowwise_rmse_r", "mean_cosine_sim_r", "mean_pearson_r", "mean_spearman_r")
+# filter data
+metric_ids <- c("mean_rowwise_mae", "mean_rowwise_rmse", "mean_rowwise_cosine")
 dataset_ids <- c("neurips-2023-data")
-
 dataset_info <- dataset_info %>% filter(dataset_id %in% dataset_ids)
 metric_info <- metric_info %>% filter(metric_id %in% metric_ids)
 results_long <- results_long %>% filter(metric_id %in% metric_ids, dataset_id %in% dataset_ids)
-stability_long <- stability_long %>% filter(orig_metric_id %in% metric_ids, dataset_id %in% dataset_ids)
+stability_long <- stability_long %>% filter(metric_id %in% metric_ids, dataset_id %in% dataset_ids)
+
+
+# compute derived metrics from stability scores
+stability_derived <- stability_long %>%
+  inner_join(results_long %>% select(method_id, dataset_id, metric_id, full_score = score), by = c("method_id", "dataset_id", "metric_id")) %>%
+  group_by(method_id, metric_id, dataset_id) %>%
+  summarise(
+    var = var(score),
+    # pct_diff = mean(ifelse(full_score == 0, NA_real_, (full_score - score) / full_score)),
+    .groups = "drop"
+  ) %>%
+  gather(key = "stat", value = "value", var) %>%
+  mutate(orig_metric_id = metric_id, metric_id = paste0(metric_id, "_", stat)) %>%
+  mutate(maximize = c("var" = FALSE, "pct_diff" = FALSE)[stat]) %>%
+  left_join(method_info %>% select(method_id, is_baseline), "method_id")
+stability_derived <- normalize_scores(stability_derived, groups = c("dataset_id", "metric_id"), metric_value = "value")$scaled
 
 # compute ranking
 overall_ranking <-
@@ -134,8 +74,12 @@ overall_ranking <-
     summarise(overall_score = aggregate_scores(score)) %>%
     arrange(desc(overall_score))
 
+write_tsv(overall_ranking, paste0(params$data_dir, "/overall_ranking.tsv"))
+
 # order by ranking
 results_long$method_id <- factor(results_long$method_id, levels = rev(overall_ranking$method_id))
+stability_long$method_id <- factor(stability_long$method_id, levels = rev(overall_ranking$method_id))
+stability_derived$method_id <- factor(stability_derived$method_id, levels = rev(overall_ranking$method_id))
 method_info$method_id <- factor(method_info$method_id, levels = rev(overall_ranking$method_id))
 
 # create aggregated results
@@ -149,7 +93,7 @@ per_metric <- results_long %>%
   summarise(score = aggregate_scores(score), .groups = "drop") %>%
   mutate(metric_id = paste0("metric_", metric_id)) %>%
   spread(metric_id, score)
-per_stability <- stability_long %>%
+per_stability <- stability_derived %>%
   group_by(method_id, metric_id) %>%
   summarise(score = aggregate_scores(score), .groups = "drop") %>%
   mutate(metric_id = paste0("stability_", metric_id)) %>%
@@ -207,3 +151,20 @@ for (col in colnames(summary_all)) {
 }
 
 write_tsv(summary_all, "results/summary_all.tsv")
+
+
+# Plot stability suppfig
+stability_sel <- stability_long %>%
+  filter(!method_id %in% c("ground_truth", "sample", "zeros"))
+results_sel <- results_long %>%
+  filter(!method_id %in% c("ground_truth", "sample", "zeros"))
+
+g <- ggplot() +
+  geom_boxplot(aes(score, method_id, colour = "bootstraps"), stability_sel) +
+  geom_point(aes(score, method_id, colour = "full"), results_sel, size = 2) +
+  facet_wrap(~metric_id, scales = "free_x", ncol = 1) +
+  theme_bw() +
+  scale_colour_manual(values = c(full = "red", bootstraps = "black")) +
+  labs(x = "Scaled score", y = NULL)
+
+ggsave("plots/suppfig_stability.pdf", g, width = 10, height = 10)

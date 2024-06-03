@@ -8,9 +8,9 @@
     "is_baseline": true,
     "paper_reference": null,
     "code_url": null,
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/control_methods/ground_truth/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/control_methods/ground_truth/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "control_methods",
@@ -21,9 +21,9 @@
     "is_baseline": true,
     "paper_reference": null,
     "code_url": null,
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/control_methods/mean_outcome/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/control_methods/mean_outcome/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "control_methods",
@@ -34,9 +34,9 @@
     "is_baseline": true,
     "paper_reference": null,
     "code_url": null,
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/control_methods/mean_across_celltypes/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/control_methods/mean_across_celltypes/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "control_methods",
@@ -47,9 +47,9 @@
     "is_baseline": true,
     "paper_reference": null,
     "code_url": null,
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/control_methods/mean_across_compounds/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/control_methods/mean_across_compounds/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "control_methods",
@@ -60,9 +60,9 @@
     "is_baseline": true,
     "paper_reference": null,
     "code_url": null,
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/control_methods/sample/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/control_methods/sample/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "control_methods",
@@ -73,9 +73,9 @@
     "is_baseline": true,
     "paper_reference": null,
     "code_url": null,
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/control_methods/zeros/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/control_methods/zeros/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "methods",
@@ -86,9 +86,9 @@
     "is_baseline": false,
     "paper_reference": null,
     "code_url": "https://github.com/Jean-KOUAGOU/1st-place-solution-single-cell-pbs/tree/main",
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/methods/lgc_ensemble/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/methods/lgc_ensemble/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "methods",
@@ -99,9 +99,9 @@
     "is_baseline": false,
     "paper_reference": null,
     "code_url": "https://github.com/okon2000/single_cell_perturbations",
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/methods/nn_retraining_with_pseudolabels/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/methods/nn_retraining_with_pseudolabels/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "methods",
@@ -112,9 +112,9 @@
     "is_baseline": false,
     "paper_reference": null,
     "code_url": "https://github.com/AntoinePassemiers/Open-Challenges-Single-Cell-Perturbations",
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/methods/jn_ap_op2/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/methods/jn_ap_op2/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "methods",
@@ -125,9 +125,9 @@
     "is_baseline": false,
     "paper_reference": "pablormier2023scape",
     "code_url": "https://github.com/scapeML/scape",
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/methods/scape/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/methods/scape/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "methods",
@@ -138,9 +138,9 @@
     "is_baseline": false,
     "paper_reference": null,
     "code_url": "https://github.com/Eliorkalfon/single_cell_pb",
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/methods/transformer_ensemble/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/methods/transformer_ensemble/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   },
   {
     "task_id": "methods",
@@ -151,8 +151,8 @@
     "is_baseline": false,
     "paper_reference": null,
     "code_url": "https://github.com/Ambros-M/Single-Cell-Perturbations-2023",
-    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/e8451aa55b7e9840d06c4c71374da34873541546/src/task/methods/pyboost/config.vsh.yaml",
+    "implementation_url": "https://github.com/openproblems-bio/task-dge-perturbation-prediction/blob/a161cfd989c11df9949386a103110fac45734cad/src/task/methods/pyboost/config.vsh.yaml",
     "code_version": null,
-    "commit_sha": "e8451aa55b7e9840d06c4c71374da34873541546"
+    "commit_sha": "a161cfd989c11df9949386a103110fac45734cad"
   }
 ]

@@ -22,7 +22,6 @@ results_long <-
     left_join(metric_info %>% select(metric_id, maximize), by = "metric_id")
 
 results_spr <- results_long %>%
-  filter(grepl("_r$", metric_id), !grepl("clip", metric_id)) %>%
   select(-maximize) %>%
   spread(metric_id, value)
 

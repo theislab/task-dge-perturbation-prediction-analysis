@@ -1,7 +1,7 @@
 #!/bin/bash
 
-BENCHMARK_RUN=s3://openproblems-data/resources/dge_perturbation_prediction/results/layerclip_2024-06-01_00-03-09
-STABILITY_RUN=s3://openproblems-data/resources/dge_perturbation_prediction/results/stability_2024-06-01_02-15-45
+BENCHMARK_RUN=s3://openproblems-data/resources/dge_perturbation_prediction/results/run_2024-06-02_22-27-09
+STABILITY_RUN=s3://openproblems-data/resources/dge_perturbation_prediction/results/stability_2024-06-02_23-33-54
 
 # fetch and process results
 NXF_VER=23.10.0 nextflow run \

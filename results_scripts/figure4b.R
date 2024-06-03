@@ -2,7 +2,6 @@ library(tidyverse)
 library(funkyheatmap)
 
 summary_all <- read_tsv("results/summary_all.tsv") %>%
-  # filter(!method_id %in% c("sample", "zeros", "ground_truth"))
   mutate(
     is_control_str = case_when(
       !is_baseline ~ "",
@@ -22,11 +21,16 @@ column_info <-
     ),
     tribble(
       ~id, ~name,
-      "metric_mean_cosine_sim_r", "Mean Rowwise Cosine",
-      "metric_mean_rowwise_mae_r", "Mean Rowwise MAE",
-      "metric_mean_pearson_r", "Mean Rowwise Pearson",
-      "metric_mean_rowwise_rmse_r", "Mean Rowwise RMSE",
-      "metric_mean_spearman_r", "Mean Rowwise Spearman"
+      # "metric_mean_rowwise_cosine", "Mean Rowwise Cosine",
+      # "metric_mean_rowwise_mae", "Mean Rowwise MAE",
+      # "metric_mean_rowwise_pearson", "Mean Rowwise Pearson",
+      # "metric_mean_rowwise_rmse", "Mean Rowwise RMSE",
+      # "metric_mean_rowwise_spearman", "Mean Rowwise Spearman"
+      "metric_mean_rowwise_cosine", "MR Cosine",
+      "metric_mean_rowwise_mae", "MR MAE",
+      "metric_mean_rowwise_pearson", "MR Pearson",
+      "metric_mean_rowwise_rmse", "MR RMSE",
+      "metric_mean_rowwise_spearman", "MR Spearman"
     ) %>%
       mutate(
         id_color = paste0(id, "_rank"),
@@ -36,12 +40,11 @@ column_info <-
       ),
     tribble(
       ~id, ~name,
-      "stability_mean_cosine_sim_r_pct_diff", "Var Mean Cosine",
-      "stability_mean_cosine_sim_r_var", "%Diff Mean Cosine",
-      "stability_mean_rowwise_mae_r_pct_diff", "Var Mean Rowwise MAE",
-      "stability_mean_rowwise_mae_r_var", "%Diff Mean Rowwise MAE",
-      "stability_mean_rowwise_rmse_r_pct_diff", "Var Mean Rowwise RMSE",
-      "stability_mean_rowwise_rmse_r_var", "%Diff Mean Rowwise RMSE"
+      "stability_mean_rowwise_cosine_var", "Var(MR Cosine)",
+      "stability_mean_rowwise_mae_var", "Var(MR MAE)",
+      "stability_mean_rowwise_pearson_var", "Var(MR Pearson)",
+      "stability_mean_rowwise_rmse_var", "Var(MR RMSE)",
+      "stability_mean_rowwise_spearman_var", "Var(MR Spearman)"
     ) %>%
       mutate(
         id_color = paste0(id, "_rank"),
@@ -122,16 +125,41 @@ g_all <- funky_heatmap(
   palettes = palettes,
   position_args = position_arguments(
     # determine xmax expand heuristically
-    expand_xmax = 3,
+    expand_xmax = 2,
     # determine offset heuristically
     col_annot_offset = max(str_length(column_info$name)) / 5
   ),
   add_abc = FALSE,
-  scale_column = FALSE,
+  scale_column = TRUE,
   legends = legends,
 )
 ggsave(
   "plots/figure4b.pdf",
+  g_all,
+  width = g_all$width,
+  height = g_all$height
+)
+
+  
+
+# create funkyheatmap
+g_all <- funky_heatmap(
+  data = summary_all %>% filter(!method_id %in% c("sample", "zeros", "ground_truth")),
+  column_info = column_info %>% filter(id %in% colnames(summary_all)),
+  column_groups = column_groups,
+  palettes = palettes,
+  position_args = position_arguments(
+    # determine xmax expand heuristically
+    expand_xmax = 2,
+    # determine offset heuristically
+    col_annot_offset = max(str_length(column_info$name)) / 5
+  ),
+  add_abc = FALSE,
+  scale_column = TRUE,
+  legends = legends,
+)
+ggsave(
+  "plots/figure4b_alt.pdf",
   g_all,
   width = g_all$width,
   height = g_all$height
