@@ -28,6 +28,8 @@ results_long <-
 
 results_long <- normalize_scores(results_long)$scaled
 
+write_tsv(results_long, paste0(params$data_dir, "/results_scaled.tsv"))
+
 # normalise stability results
 stability_long <- stability %>%
   map_dfr(as.data.frame) %>%
@@ -42,6 +44,8 @@ stability_long <- stability %>%
   left_join(metric_info %>% select(metric_id, maximize), by = "metric_id")
 
 stability_long <- normalize_scores(stability_long, groups = c("dataset_id", "metric_id", "bootstrap"))$scaled
+
+write_tsv(stability_long, paste0(params$data_dir, "/results_stability_scaled.tsv"))
 
 # filter data
 metric_ids <- c("mean_rowwise_mae", "mean_rowwise_rmse", "mean_rowwise_cosine")
@@ -66,6 +70,8 @@ stability_derived <- stability_long %>%
   mutate(maximize = c("var" = FALSE, "pct_diff" = FALSE)[stat]) %>%
   left_join(method_info %>% select(method_id, is_baseline), "method_id")
 stability_derived <- normalize_scores(stability_derived, groups = c("dataset_id", "metric_id"), metric_value = "value")$scaled
+
+write_tsv(stability_derived, paste0(params$data_dir, "/results_stability_derived.tsv"))
 
 # compute ranking
 overall_ranking <-
