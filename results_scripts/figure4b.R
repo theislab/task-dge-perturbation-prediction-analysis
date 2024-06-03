@@ -16,7 +16,7 @@ column_info <-
     tribble(
       ~id, ~id_color, ~name, ~group, ~geom, ~palette, ~options,
       "method_name", NA_character_, "Name", "method", "text", NA_character_, list(width = 10, hjust = 0),
-      "is_control_str", NA_character_, "Control method", "method", "text", NA_character_, list(width = 2),
+      # "is_control_str", NA_character_, "Control method", "method", "text", NA_character_, list(width = 2),
       "overall_score", "overall_score_rank", "Score", "overall", "bar", "overall", list(width = 4),
     ),
     tribble(
@@ -102,19 +102,29 @@ legends <- list(
     title = "Rank",
     palette = "overall",
     geom = "rect",
-    labels = c("worst", " ", "", " ", "best"),
-    size = c(1, 1, 1, 1, 1)
+    labels = c("", "", "worst", "", "", "", "best", ""),
+    label_hjust = rep(.5, 8),
+    size = c(0, 0, 1, 1, 1, 1, 1, 0)
   ),
   list(
     title = "Scaled score",
     palette = "overall",
     geom = "funkyrect",
-    labels = c("0", "", "", "", "0.4", "", "0.6", "", "0.8", "", "1"),
-    size = seq(0, 1, by = .1)
+    labels = c("", "0", "", "", "", "0.4", "", "0.6", "", "0.8", "", "1"),
+    size = c(0, seq(0, 1, by = .1)),
+    label_hjust = rep(.5, 12)
   ),
   list(palette = "metric", enabled = FALSE),
   list(palette = "stability", enabled = FALSE),
-  list(palette = "resources", enabled = FALSE)
+  list(
+    title = "Resources",
+    palette = "resources",
+    geom = "rect",
+    labels = c("min", "", "", "", "max"),
+    label_hjust = c(0, .5, .5, .5, 1),
+    color = colorRampPalette(rev(funkyheatmap:::default_palettes$numerical$YlOrBr))(5),
+    size = c(1, 1, 1, 1, 1)
+  )
 )
 
 # create funkyheatmap
@@ -142,32 +152,9 @@ ggsave(
 
   
 
+
 # create funkyheatmap
 g_all <- funky_heatmap(
-  data = summary_all %>% filter(!method_id %in% c("sample", "zeros", "ground_truth")),
-  column_info = column_info %>% filter(id %in% colnames(summary_all)),
-  column_groups = column_groups,
-  palettes = palettes,
-  position_args = position_arguments(
-    # determine xmax expand heuristically
-    expand_xmax = 2,
-    # determine offset heuristically
-    col_annot_offset = max(str_length(column_info$name)) / 5
-  ),
-  add_abc = FALSE,
-  scale_column = TRUE,
-  legends = legends,
-)
-ggsave(
-  "plots/figure4b_alt.pdf",
-  g_all,
-  width = g_all$width,
-  height = g_all$height
-)
-
-
-# create funkyheatmap
-g_all1 <- funky_heatmap(
   data = summary_all %>% filter(!method_id %in% c("sample", "zeros", "ground_truth", "mean_outcome", "mean_across_compounds")),
   column_info = column_info %>% filter(id %in% colnames(summary_all)),
   column_groups = column_groups,
@@ -182,24 +169,9 @@ g_all1 <- funky_heatmap(
   scale_column = FALSE,
   legends = legends,
 )
-g_all2 <- funky_heatmap(
-  data = summary_all %>% filter(!method_id %in% c("sample", "zeros", "ground_truth", "mean_outcome", "mean_across_compounds")),
-  column_info = column_info %>% filter(id %in% colnames(summary_all)),
-  column_groups = column_groups,
-  palettes = palettes,
-  position_args = position_arguments(
-    # determine xmax expand heuristically
-    expand_xmax = 2,
-    # determine offset heuristically
-    col_annot_offset = max(str_length(column_info$name)) / 5
-  ),
-  add_abc = FALSE,
-  scale_column = TRUE,
-  legends = legends,
-)
 ggsave(
-  "plots/figure4b_altbis.pdf",
-  patchwork::wrap_plots(g_all1, patchwork::plot_spacer(), g_all2, ncol = 1, heights = c(1, .05, 1)),
-  width = max(g_all1$width, g_all2$width),
-  height = (g_all1$height + g_all2$height) / 2 * 2.05
+  "plots/figure4b_alt.pdf",
+  g_all,
+  width = g_all$width,
+  height = g_all$height
 )
