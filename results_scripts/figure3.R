@@ -165,9 +165,9 @@ g3 <- funky_heatmap(
     # determine offset heuristically
     col_annot_offset = max(str_length(column_info$name)) / 5
   ),
-  add_abc = FALSE,
+  add_abc = TRUE,
   scale_column = FALSE,
-  legends = legends,
+  legends = legends
 )
 ggsave(
   "plots/figure3.pdf",

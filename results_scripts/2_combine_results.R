@@ -174,3 +174,29 @@ g <- ggplot() +
   labs(x = "Scaled score", y = NULL)
 
 ggsave("plots/suppfig_stability.pdf", g, width = 10, height = 10)
+
+
+
+
+# Plot stability suppfig
+g <- ggplot() +
+  geom_boxplot(aes(score, method_id, colour = "bootstraps"), stability_long) +
+  geom_point(aes(score, method_id, colour = "full"), results_long, size = 2) +
+  facet_wrap(~metric_id, scales = "free_x", ncol = 1) +
+  theme_bw() +
+  scale_colour_manual(values = c(full = "red", bootstraps = "black")) +
+  labs(x = "Scaled score", y = NULL)
+
+ggsave("plots/suppfig_stability_all.pdf", g, width = 10, height = 10)
+
+
+# Plot stability suppfig
+g <- ggplot() +
+  ggbeeswarm::geom_quasirandom(aes(score, method_id, colour = "bootstraps"), stability_long, size = 1, alpha = .5) +
+  geom_point(aes(score, method_id, colour = "full"), results_long, size = 2) +
+  facet_wrap(~metric_id, scales = "free_x", ncol = 1) +
+  theme_bw() +
+  scale_colour_manual(values = c(full = "red", bootstraps = "black")) +
+  labs(x = "Scaled score", y = NULL)
+
+ggsave("plots/suppfig_stability_scatter.pdf", g, width = 10, height = 10)

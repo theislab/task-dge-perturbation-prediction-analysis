@@ -29,9 +29,14 @@ normalize_scores <- function(
   df,
   groups = c("dataset_id", "metric_id"),
   metric_value = "value",
-  maximize = "maximize"
+  maximize = "maximize",
+  rescale_only_with_controls = FALSE
 ) {
-  norm <- df %>%
+  df2 <- df
+  if (rescale_only_with_controls) {
+    df2 <- df2 %>% filter(is_baseline)
+  }
+  norm <- df2 %>%
     group_by(!!!syms(groups)) %>%
     summarise(
       min = min(!!sym(metric_value), na.rm = TRUE),
