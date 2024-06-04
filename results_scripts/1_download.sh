@@ -1,5 +1,6 @@
 #!/bin/bash
 
+RESOURCES="s3://openproblems-bio/public/neurips-2023-competition/workflow-resources/"
 BENCHMARK_RUN=s3://openproblems-data/resources/dge_perturbation_prediction/results/run_2024-06-02_22-27-09
 STABILITY_RUN=s3://openproblems-data/resources/dge_perturbation_prediction/results/stability_2024-06-02_23-33-54
 
@@ -25,3 +26,9 @@ NXF_VER=23.10.0 nextflow run \
 aws s3 cp \
   "$STABILITY_RUN/stability_uns.yaml" \
   results/stability_uns.yaml
+
+aws s3 sync \
+  "$BENCHMARK_RUN/predictions" \
+  data/predictions
+
+aws s3 sync "$RESOURCES" data/resources

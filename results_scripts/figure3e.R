@@ -132,7 +132,7 @@ legends <- list(
 
 
 # create funkyheatmap
-g_all <- funky_heatmap(
+g_funky_heatmap <- funky_heatmap(
   data = summary_all %>% filter(!method_id %in% c("sample", "zeros", "ground_truth", "mean_outcome", "mean_across_compounds")),
   column_info = column_info %>% filter(id %in% colnames(summary_all)),
   column_groups = column_groups,
@@ -149,7 +149,7 @@ g_all <- funky_heatmap(
 )
 ggsave(
   "plots/figure4b.pdf",
-  g_all,
+  g_funky_heatmap,
   width = g_all$width,
   height = g_all$height
 )

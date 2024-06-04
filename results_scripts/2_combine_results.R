@@ -7,14 +7,13 @@ library(tidyverse)
 source("results_scripts/helpers.R")
 
 # read results
-params <- list(data_dir = "results")
-task_info <- jsonlite::read_json(paste0(params$data_dir, "/task_info.json"))
-method_info <- jsonlite::read_json(paste0(params$data_dir, "/method_info.json"), simplifyVector = TRUE)
-metric_info <- jsonlite::read_json(paste0(params$data_dir, "/metric_info.json"), simplifyVector = TRUE)
-dataset_info <- jsonlite::read_json(paste0(params$data_dir, "/dataset_info.json"), simplifyVector = TRUE)
-results <- jsonlite::read_json(paste0(params$data_dir, "/results.json"), simplifyVector = TRUE) %>% tibble()
-qc <- jsonlite::read_json(paste0(params$data_dir, "/quality_control.json"), simplifyVector = TRUE)
-stability <- yaml::read_yaml(paste0(params$data_dir, "/stability_uns.yaml"))
+task_info <- jsonlite::read_json("results/task_info.json")
+method_info <- jsonlite::read_json("results/method_info.json", simplifyVector = TRUE)
+metric_info <- jsonlite::read_json("results/metric_info.json", simplifyVector = TRUE)
+dataset_info <- jsonlite::read_json("results/dataset_info.json", simplifyVector = TRUE)
+results <- jsonlite::read_json("results/results.json", simplifyVector = TRUE) %>% tibble()
+qc <- jsonlite::read_json("results/quality_control.json", simplifyVector = TRUE)
+stability <- yaml::read_yaml("results/stability_uns.yaml")
 
 # normalise results
 results_long <-
@@ -28,7 +27,7 @@ results_long <-
 
 results_long <- normalize_scores(results_long)$scaled
 
-write_tsv(results_long, paste0(params$data_dir, "/results_scaled.tsv"))
+# write_tsv(results_long, "results/results_scaled.tsv")
 
 # normalise stability results
 stability_long <- stability %>%
@@ -45,7 +44,7 @@ stability_long <- stability %>%
 
 stability_long <- normalize_scores(stability_long, groups = c("dataset_id", "metric_id", "bootstrap"))$scaled
 
-write_tsv(stability_long, paste0(params$data_dir, "/results_stability_scaled.tsv"))
+write_tsv(stability_long, "results/results_stability_scaled.tsv")
 
 # filter data
 metric_ids <- c("mean_rowwise_mae", "mean_rowwise_rmse", "mean_rowwise_cosine")
@@ -71,7 +70,7 @@ stability_derived <- stability_long %>%
   left_join(method_info %>% select(method_id, is_baseline), "method_id")
 stability_derived <- normalize_scores(stability_derived, groups = c("dataset_id", "metric_id"), metric_value = "value")$scaled
 
-write_tsv(stability_derived, paste0(params$data_dir, "/results_stability_derived.tsv"))
+# write_tsv(stability_derived, "results/results_stability_derived.tsv")
 
 # compute ranking
 overall_ranking <-
@@ -80,7 +79,7 @@ overall_ranking <-
     summarise(overall_score = aggregate_scores(score)) %>%
     arrange(desc(overall_score))
 
-write_tsv(overall_ranking, paste0(params$data_dir, "/overall_ranking.tsv"))
+write_tsv(overall_ranking, "results/overall_ranking.tsv")
 
 # order by ranking
 results_long$method_id <- factor(results_long$method_id, levels = rev(overall_ranking$method_id))
