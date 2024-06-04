@@ -1,13 +1,15 @@
 library(tidyverse)
 library(funkyheatmap)
 
+kaggle_ranks <- c("jn_ap_op2" = "20", "lgc_ensemble" = "1", "nn_retraining_with_pseudolabels" = "3", "pyboost" = "18", "scape" = "16", "transformer_ensemble" = "2")
 summary_all <- read_tsv("results/summary_all.tsv") %>%
   mutate(
     is_control_str = case_when(
       !is_baseline ~ "",
       method_id == "ground_truth" ~ "+",
       TRUE ~ "-"
-    )
+    ),
+    kaggle_rank = ifelse(method_id %in% names(kaggle_ranks), kaggle_ranks[method_id], "/"),
   )
 
 # create column info
@@ -15,6 +17,7 @@ column_info <-
   bind_rows(
     tribble(
       ~id, ~id_color, ~name, ~group, ~geom, ~palette, ~options,
+      "kaggle_rank", NA_character_, "Leaderboard ranking", "method", "text", NA_character_, list(width = 1),
       "method_name", NA_character_, "Name", "method", "text", NA_character_, list(width = 10, hjust = 0),
       # "is_control_str", NA_character_, "Control method", "method", "text", NA_character_, list(width = 2),
       "overall_score", "overall_score_rank", "Score", "overall", "bar", "overall", list(width = 4),
