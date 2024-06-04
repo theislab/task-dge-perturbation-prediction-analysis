@@ -127,31 +127,6 @@ legends <- list(
   )
 )
 
-# create funkyheatmap
-g_all <- funky_heatmap(
-  data = summary_all,
-  column_info = column_info %>% filter(id %in% colnames(summary_all)),
-  column_groups = column_groups,
-  palettes = palettes,
-  position_args = position_arguments(
-    # determine xmax expand heuristically
-    expand_xmax = 2,
-    # determine offset heuristically
-    col_annot_offset = max(str_length(column_info$name)) / 5
-  ),
-  add_abc = FALSE,
-  scale_column = TRUE,
-  legends = legends,
-)
-ggsave(
-  "plots/figure4b.pdf",
-  g_all,
-  width = g_all$width,
-  height = g_all$height
-)
-
-  
-
 
 # create funkyheatmap
 g_all <- funky_heatmap(
@@ -170,8 +145,11 @@ g_all <- funky_heatmap(
   legends = legends,
 )
 ggsave(
-  "plots/figure4b_alt.pdf",
+  "plots/figure4b.pdf",
   g_all,
   width = g_all$width,
   height = g_all$height
 )
+
+# convert pdf to svg
+system("pdftocairo -svg plots/figure4b.pdf plots/figure4b.svg")
