@@ -27,7 +27,7 @@ results_long <-
 
 results_long <- normalize_scores(results_long)$scaled
 
-# write_tsv(results_long, "results/results_scaled.tsv")
+write_tsv(results_long, "results/results_scaled.tsv")
 
 # normalise stability results
 stability_long <- stability %>%
@@ -61,16 +61,17 @@ stability_derived <- stability_long %>%
   group_by(method_id, metric_id, dataset_id) %>%
   summarise(
     var = var(score),
+    mean = mean(score),
     # pct_diff = mean(ifelse(full_score == 0, NA_real_, (full_score - score) / full_score)),
     .groups = "drop"
   ) %>%
   gather(key = "stat", value = "value", var) %>%
   mutate(orig_metric_id = metric_id, metric_id = paste0(metric_id, "_", stat)) %>%
-  mutate(maximize = c("var" = FALSE, "pct_diff" = FALSE)[stat]) %>%
+  mutate(maximize = c("mean" = FALSE, "var" = FALSE, "pct_diff" = FALSE)[stat]) %>%
   left_join(method_info %>% select(method_id, is_baseline), "method_id")
 stability_derived <- normalize_scores(stability_derived, groups = c("dataset_id", "metric_id"), metric_value = "value")$scaled
 
-# write_tsv(stability_derived, "results/results_stability_derived.tsv")
+write_tsv(stability_derived, "results/results_stability_derived.tsv")
 
 # compute ranking
 overall_ranking <-
