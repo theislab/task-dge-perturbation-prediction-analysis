@@ -23,6 +23,6 @@ reproduce figure 3
 ## Fig9
 `results_analysis/results_analysis.ipynb`, `results_analysis/results_stability_plot.ipynb` reproduce the plots from figure 9
 
-## Supplementary able with T cell coefficient of variation
+## Supplementary table with T cell coefficient of variation
 `data_preprocessing/celltype_analysis_2.ipynb`
 
