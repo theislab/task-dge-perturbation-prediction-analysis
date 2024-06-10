@@ -8,11 +8,11 @@ library(future)
 
 ## VIASH START
 par <- list(
-  input = "data/neurips-2023-data/pseudobulk_cleaned.h5ad",
+  input = "data/pseudobulk_cleaned.h5ad",
   de_sig_cutoff = 0.05,
   control_compound = "Dimethyl Sulfoxide",
   # for public data
-  output = "data/neurips-2023-data/de_per_donor.h5ad",
+  output = "data/de_per_donor.h5ad",
   input_splits = c("train", "control", "public_test", "private_test"),
   output_splits = c("train", "control", "public_test", "private_test")
 )
