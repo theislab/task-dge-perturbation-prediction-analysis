@@ -1,4 +1,5 @@
-# open-problems-23-sc-perturbation-prediction reproducibility
+# Open Problems Perturbation Prediction task data analysis
+This repository is a supplement to the manuscript "A benchmark for prediction of transcriptomic responses to chemical perturbations across cell types", the benchmark [github.com/openproblems-bio/task\_perturbation\_prediction](https://github.com/openproblems-bio/task_perturbation_prediction) and the platform [https://openproblems.bio/results/perturbation\_prediction](https://openproblems.bio/results/perturbation_prediction).
 
 ## Cell type annotation and initial filtering
 Use the conda environment `environment.yaml`.
