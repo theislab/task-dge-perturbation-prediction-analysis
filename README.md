@@ -12,5 +12,13 @@ The umap plots shown in Fig1d are generated with `data_preprocessing/dataset_uma
 ## Fig2
 `representation_analysis/representation_analysis.ipynb` reproduces the plots from figure 2
 
+## Fig3
+```
+results_scripts/1_download.sh
+results_scripts/2_combine_results.R
+results_scripts/figure3.R
+```
+reproduce figure 3
+
 ## Fig9
-`results_analysis/results_analysis.ipynb` and `results_analysis/results_stability_plot.ipynb` reproduces the plots from figure 9
+`results_analysis/results_analysis.ipynb`, `results_analysis/results_stability_plot.ipynb` reproduce the plots from figure 9
