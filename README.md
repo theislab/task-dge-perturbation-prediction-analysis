@@ -7,6 +7,8 @@ Execute `data_preprocessing/celltype_analysis_1.ipynb` and `data_preprocessing/c
 
 The resulting file `sc_counts_reannotated_with_counts.h5ad` is further processed on the platform [github.com/openproblems-bio/task\_perturbation\_prediction](https://github.com/openproblems-bio/task_perturbation_prediction). The analysis that justifies the resulting filtering is shown in `data_preprocessing/molecule_filtering.ipynb` .
 
+The notebook `data_preprocessing/multiome_cell_type_annotation.ipynb` applies this same cell type annotation approach to the multimodal snRNA-seq/scATAC-seq baseline data.
+
 ## Fig1d
 The umap plots shown in Fig1d are generated with `data_preprocessing/dataset_umap.ipynb`
 
